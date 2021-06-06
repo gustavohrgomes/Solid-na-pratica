@@ -21,9 +21,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MetodosEstaticos", "Metodos
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MetodosExtensao", "MetodosExtensao\MetodosExtensao.csproj", "{C1B2936F-BFB2-48FF-8C9C-37DA2CE005F8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Heranca", "Heranca\Heranca.csproj", "{93A3CB43-A1D8-4F26-943C-9CCFED076B7E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Heranca", "Heranca\Heranca.csproj", "{93A3CB43-A1D8-4F26-943C-9CCFED076B7E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HerancaConstrutor", "HerancaConstrutor\HerancaConstrutor.csproj", "{5EDDC6F4-708C-4871-9CDE-A2603F26EAFE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HerancaConstrutor", "HerancaConstrutor\HerancaConstrutor.csproj", "{5EDDC6F4-708C-4871-9CDE-A2603F26EAFE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassesAbstratas", "ClassesAbstratas\ClassesAbstratas.csproj", "{D65E7AC9-C5AB-4863-9528-93275204A7AC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -75,6 +77,10 @@ Global
 		{5EDDC6F4-708C-4871-9CDE-A2603F26EAFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5EDDC6F4-708C-4871-9CDE-A2603F26EAFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5EDDC6F4-708C-4871-9CDE-A2603F26EAFE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D65E7AC9-C5AB-4863-9528-93275204A7AC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D65E7AC9-C5AB-4863-9528-93275204A7AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D65E7AC9-C5AB-4863-9528-93275204A7AC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D65E7AC9-C5AB-4863-9528-93275204A7AC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
