@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SRP_Violacao", "SRP_Violaca
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SRP_Aderente", "SRP_Aderente\SRP_Aderente.csproj", "{476215F6-F783-4C42-8E55-F8F85827564D}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - OCP", "2 - OCP", "{5FB025BA-6D4B-4C62-98F1-5E9F1FFDC43E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OCP_ExtensionMethods", "OCP_ExtensionMethods\OCP_ExtensionMethods.csproj", "{6900F87D-A3D8-4B6E-8DBA-5D894FBB355C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,6 +27,10 @@ Global
 		{476215F6-F783-4C42-8E55-F8F85827564D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{476215F6-F783-4C42-8E55-F8F85827564D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{476215F6-F783-4C42-8E55-F8F85827564D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6900F87D-A3D8-4B6E-8DBA-5D894FBB355C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6900F87D-A3D8-4B6E-8DBA-5D894FBB355C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6900F87D-A3D8-4B6E-8DBA-5D894FBB355C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6900F87D-A3D8-4B6E-8DBA-5D894FBB355C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -30,6 +38,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{80CD947C-321F-47C2-B266-94C9B6F48DBF} = {FEF5AB1E-C70F-486C-A40F-3172259755BE}
 		{476215F6-F783-4C42-8E55-F8F85827564D} = {FEF5AB1E-C70F-486C-A40F-3172259755BE}
+		{6900F87D-A3D8-4B6E-8DBA-5D894FBB355C} = {5FB025BA-6D4B-4C62-98F1-5E9F1FFDC43E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {9AB1B944-9904-402D-B421-236052BB031C}
