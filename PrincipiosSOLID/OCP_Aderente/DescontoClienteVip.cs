@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace OCP_Aderente
+﻿namespace OCP_Aderente
 {
     class DescontoClienteVip : Pedido
     {
