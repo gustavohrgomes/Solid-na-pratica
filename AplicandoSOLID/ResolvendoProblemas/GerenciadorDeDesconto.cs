@@ -8,36 +8,18 @@ namespace ResolvendoProblemas
     class GerenciadorDeDesconto
     {
         private readonly ICalculaDescontoFidelidade _descontoFidelidade;
+        private readonly ICalculaDescontoStatusContaFactory _descontoStatusConta;
 
-        public GerenciadorDeDesconto(ICalculaDescontoFidelidade descontoFidelidade)
+        public GerenciadorDeDesconto(ICalculaDescontoFidelidade descontoFidelidade, ICalculaDescontoStatusContaFactory descontoStatusConta)
         {
             _descontoFidelidade = descontoFidelidade;
+            _descontoStatusConta = descontoStatusConta;
         }
 
         public decimal AplicarDesconto(decimal precoProduto, StatusContaCliente statusContaCliente, int tempoDeContaEmAnos)
         {
-            decimal precoAposDesconto = 0;
-
-            switch (statusContaCliente)
-            {
-                case StatusContaCliente.NaoRegistrado:
-                    precoAposDesconto = new ClienteNaoRegistrado().AplicarDescontoStatusConta(precoProduto);
-                    break;
-                case StatusContaCliente.ClienteComum:
-                    precoAposDesconto = new ClienteComum().AplicarDescontoStatusConta(precoProduto);
-                    precoAposDesconto = _descontoFidelidade.AplicarDescontoFidelidade(precoAposDesconto, tempoDeContaEmAnos);
-                    break;
-                case StatusContaCliente.ClienteEspecial:
-                    precoAposDesconto = new ClienteEspecial().AplicarDescontoStatusConta(precoProduto);
-                    precoAposDesconto = _descontoFidelidade.AplicarDescontoFidelidade(precoAposDesconto, tempoDeContaEmAnos);
-                    break;
-                case StatusContaCliente.ClienteVip:
-                    precoAposDesconto = new ClienteVip().AplicarDescontoStatusConta(precoProduto);
-                    precoAposDesconto = _descontoFidelidade.AplicarDescontoFidelidade(precoAposDesconto, tempoDeContaEmAnos);
-                    break;
-                default:
-                    throw new ArgumentException("Status do cliente não pode estar vazio.");
-            }
+            decimal precoAposDesconto = _descontoStatusConta.GetCalculaDescontoStatusConta(statusContaCliente).AplicarDescontoStatusConta(precoProduto);
+            precoAposDesconto = _descontoFidelidade.AplicarDescontoFidelidade(precoAposDesconto, tempoDeContaEmAnos);
 
             return precoAposDesconto;
         }
