@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace ResolvendoProblemas
+namespace ResolvendoProblemas.Enums
 {
     public enum StatusContaCliente
     {
