@@ -6,17 +6,23 @@ namespace SOLID.Exercicio2
 {
     class Pedido
     {
-        private ConsoleLogger log = new ConsoleLogger();
+        private readonly ILogger _logger;
+
+        public Pedido(ILogger logger)
+        {
+            _logger = logger;
+        }
+
         public virtual void AdicionarPedido()
         {
             try
             {
                 //código para validar e incluir pedido
-                log.Registrar($"Pedido Incluido em :  {DateTime.Now}");
+                _logger.Registrar($"Pedido Incluido em :  {DateTime.Now}");
             }
             catch (Exception ex)
             {
-                log.Registrar($"{ex} - {DateTime.Now}");
+                _logger.Registrar($"{ex} - {DateTime.Now}");
             }
         }
     }

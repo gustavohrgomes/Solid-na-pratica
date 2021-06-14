@@ -6,7 +6,11 @@ namespace SOLID.Exercicio2
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            ILogger meuLogArquivo = new FileLogger();
+            ILogger meuLogConsole = new ConsoleLogger();
+
+            Pedido pedido = new Pedido(meuLogArquivo);
+            pedido.AdicionarPedido();
         }
     }
 }

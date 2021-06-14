@@ -1,10 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace SOLID.Exercicio2
 {
-    class ConsoleLogger
+    class ConsoleLogger : ILogger
     {
         public void Registrar(string mensagem)
         {
