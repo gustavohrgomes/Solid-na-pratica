@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace SOLID.Exercicio1
+﻿namespace SOLID.Exercicio1
 {
     class LocalizaCliente
     {
@@ -15,16 +11,6 @@ namespace SOLID.Exercicio1
         {
             var resultado = Cliente.GetClientes().Find(n => n.Nome == nome);
             return resultado;
-        }
-        public static string ExportarCSV(List<Cliente> dados)
-        {
-            StringBuilder sb = new StringBuilder();
-            foreach (var item in dados)
-            {
-                sb.AppendFormat($"{item.Nome},{item.Pais},{item.Email}");
-                sb.AppendLine();
-            }
-            return sb.ToString();
         }
     }
 }
